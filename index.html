@@ -171,23 +171,25 @@
             </div>
         </section>
 
-        <!--  contact section design  -->
-        <section class="contact" id="contact">
-            <h2 class="heading">Contactez <span>Moi!</span></h2>
+<!--  contact section design  -->
+<section class="contact" id="contact">
+    <h2 class="heading">Contactez <span>Moi!</span></h2>
 
-            <form action="#">
-                <div class="input-box">
-                    <input type="text" placeholder="Nom">
-                    <input type="email" placeholder="Mail">
-                </div>
-                <div class="input-box">
-                    <input type="number" placeholder="Numéro De Téléphone">
-                    <input type="text" placeholder="Sujet">
-                </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Votre Message"></textarea>
-                <input type="submit" value="Envoyer" class="btn">
-            </form>
-        </section>
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="cb511035-834d-4958-bb77-587bb3853d47">
+        <div class="input-box">
+            <input type="text" name="name" placeholder="Nom" required>
+            <input type="email" name="email" placeholder="Mail" required>
+        </div>
+        <div class="input-box">
+            <input type="number" name="phone" placeholder="Numéro De Téléphone">
+            <input type="text" name="subject" placeholder="Sujet" required>
+        </div>
+        <textarea name="message" cols="30" rows="10" placeholder="Votre Message" required></textarea>
+        <input type="submit" value="Envoyer" class="btn">
+    </form>
+</section>
+
 
         <!--  contact section design  -->
         <footer class="footer">
